@@ -56,7 +56,7 @@ In this assessment, you will be responsible for building a backend application t
 
 ## Submission Details:
 
-1. Please submit your completed assessment in or before 12th August 2023.
+1. Please submit your completed assessment on or before 12th August 2023.
 
 2. Upload the project to a code repository (GitHub, GitLab, or any other platform) and share the link with us.
 
@@ -78,6 +78,49 @@ In this assessment, you will be responsible for building a backend application t
 
 6. Documentation: Clear and concise instructions on setting up and running the app will be appreciated.
 
+
+## Getting Started
+## Flight Booking Backend App Setup Guide
+Follow these steps to set up and run the Flight Booking Backend App:
+
+## Prerequisites
+1. Ensure you have Node.js installed on your machine. You can download it from nodejs.org.
+## Installation
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd flight_booking_backend`
+3. Install dependencies: `npm install`
+4. note: flights.json and bookings.json are the mock databases for this project
+
+## Running the App from your terminal
+1. From the root directory change to the src folder by running the following command `cd src`
+2. From the src folder run the following command to start the backend server: `node app.js`
+3. The backend server will be running at http://localhost:3000.
+   
+## Endpoints
+1. GET /flights: Retrieve available flights based on user input.
+2. POST /confirm-booking: Confirm flight booking.
+3. POST /confirm-payment: Confirm flight booking and payment.
+   
+## Usage
+To retrieve available flights, make a GET request to http://localhost:3000/flights with query parameters departure, destination, and date.
+
+To confirm a flight booking, make a POST request to http://localhost:3000/confirm-booking with a JSON payload containing flightId.
+
+To simulate confirmed payment and booking, make a POST request to http://localhost:3000/confirm-payment with a JSON payload containing flightId. 
+
+Please use postman to test endpoints
+
+## Documentation
+Access documentation here - https://documenter.getpostman.com/view/25014777/2s9Xy5LVxR
+
+## Error Handling
+The application provides appropriate error handling for invalid inputs and unexpected scenarios.
+
+## Testing
+The application includes comprehensive unit tests to ensure reliability and functionality. Run tests using the following command: `npm test`
+
+With these instructions, developers and users will be able to quickly set up and run the Flight Booking Backend App for testing and development purposes.
+
 ## Author
 
 #### 👤 Author1
@@ -95,14 +138,3 @@ Please give a ⭐️ if you like this project!
 - Hat tip to Clan Africa
 - Inspiration
 - etc
-
-
-
-## Getting Started
-## Flight Booking Backend App Setup Guide
-Follow these steps to set up and run the Flight Booking Backend App:
-
-## Prerequisites
-1. Ensure you have Node.js installed on your machine. You can download it from nodejs.org.
-Installation
-
