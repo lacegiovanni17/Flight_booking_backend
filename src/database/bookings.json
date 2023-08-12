@@ -10,5 +10,23 @@
     "departure": "CityA",
     "destination": "CityB",
     "date": "2023-08-15"
+  },
+  {
+    "id": 1,
+    "departure": "CityA",
+    "destination": "CityB",
+    "date": "2023-08-15"
+  },
+  {
+    "id": 1,
+    "departure": "CityA",
+    "destination": "CityB",
+    "date": "2023-08-15"
+  },
+  {
+    "id": 1,
+    "departure": "CityA",
+    "destination": "CityB",
+    "date": "2023-08-15"
   }
 ]

@@ -85,12 +85,13 @@ export const confirmPaymentBookings = (req, res) => {
       return res.status(404).json({ error: "Flight not found" });
     }
 
-    // Simulate payment processing (mock payment system)
+      // Simulate payment processing (mock payment system)
+      // For failed payments change by hard coding the value of the paymentStatus variable to string "failed"
     const paymentStatus = "confirmed";
 
     if (paymentStatus === "confirmed") {
       // Store the booking information
-      fs.readFile("./bookings.json", "utf8", (err, bookingsData) => {
+      fs.readFile("./database/bookings.json", "utf8", (err, bookingsData) => {
         if (err) {
           console.error(err);
           return res.status(500).json({ error: "Internal Server Error" });
@@ -100,7 +101,7 @@ export const confirmPaymentBookings = (req, res) => {
         bookings.push(selectedFlight);
 
         fs.writeFile(
-          "./bookings.json",
+          "./database/bookings.json",
           JSON.stringify(bookings, null, 2),
           (err) => {
             if (err) {
