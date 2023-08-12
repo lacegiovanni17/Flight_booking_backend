@@ -98,13 +98,10 @@ Please give a ⭐️ if you like this project!
 
 
 ## Getting Started
+## Flight Booking Backend App Setup Guide
+Follow these steps to set up and run the Flight Booking Backend App:
 
-First, run the development server:
-
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Prerequisites
+1. Ensure you have Node.js installed on your machine. You can download it from nodejs.org.
+Installation
 
