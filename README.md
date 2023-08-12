@@ -20,6 +20,7 @@ This project will allow you to assess my proficiency in backend development, API
 * ExpressJS
 * Javascript
 * Jest
+* Postman
 
 ## Project Description: Conversational Bot Flight Booking App
 
