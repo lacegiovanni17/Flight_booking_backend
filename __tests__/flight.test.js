@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../app"); // Adjust the path as needed
+const app = require("../src/app"); // Adjust the path as needed
 
 describe("GET /flights", () => {
   it("should retrieve available flights", async () => {

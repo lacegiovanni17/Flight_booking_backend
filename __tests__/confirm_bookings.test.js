@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../app"); // Adjust the path as needed
+const app = require("../src/app"); // Adjust the path as needed
 
 describe("POST /confirm_booking", () => {
   it("should confirm a booking", async () => {
